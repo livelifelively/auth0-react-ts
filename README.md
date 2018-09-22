@@ -1,6 +1,6 @@
-# react-init-ts
+# auth0-react-ts
 
-My boilerplate for developing react applications with typescript.
+auth0 integration in react applications built with typescript.
 
 ## Features
 
@@ -17,8 +17,8 @@ My boilerplate for developing react applications with typescript.
 
 ## Installation
 
-* `git clone git@github.com:livelifelively/react-init-ts.git`
-* `cd react-init-ts`
+* `git clone git@github.com:livelifelively/auth0-react-ts.git`
+* `cd auth0-react-ts`
 * `npm install`
 * `npm start`
 * visit `http://localhost:8080/`
