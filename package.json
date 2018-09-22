@@ -2,12 +2,15 @@
   "name": "react-init-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "scripts/index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./config/webpack/dev.config.js",
-    "start:prod": "webpack-dev-server --config ./config/webpack/prod.config.js",
+    "build": "webpack --config ./config/webpack/prod.config.js",
+    "scripts": "node ./scripts",
+    "start": "run-s webpack-server:dev",
+    "start:prod": "run-s webpack-server:prod",
     "test": "jest --watch --coverage --config=config/jest.config.js",
-    "build": "webpack --config ./config/webpack/prod.config.js"
+    "webpack-server:prod": "webpack-dev-server --config ./config/webpack/prod.config.js",
+    "webpack-server:dev": "webpack-dev-server --config ./config/webpack/dev.config.js"
   },
   "keywords": [],
   "author": "Ashish Rana",
@@ -41,9 +44,15 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
+    "@types/auth0-js": "^8.11.5",
+    "@types/history": "^4.7.0",
+    "@types/jwt-decode": "^2.2.1",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
     "@types/react-redux": "^6.0.9",
+    "auth0-js": "^9.7.3",
+    "history": "^4.7.2",
+    "jwt-decode": "^2.2.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
