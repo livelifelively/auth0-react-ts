@@ -2,3 +2,4 @@ node_modules/
 coverage/
 .idea
 dist/js/
+config/app/index.ts
