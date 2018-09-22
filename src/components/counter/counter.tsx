@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {Component} from 'react';
-import {number} from 'prop-types';
 
 interface IState {
   counter: number;
